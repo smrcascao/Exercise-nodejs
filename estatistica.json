@@ -1,0 +1,93 @@
+[{
+		"idProduto": 1,
+		"vendas": [{
+			"ano": "2008",
+			"vendidos": "20",
+			"estragados": "30"
+		}, {
+			"ano": "2009",
+			"vendidos": "50",
+			"estragados": "35"
+		}, {
+			"ano": "2010",
+			"vendidos": "45",
+			"estragados": "38"
+		}]
+	}, {
+		"idProduto": 2,
+		"vendas": [{
+			"ano": "2008",
+			"vendidos": "20",
+			"estragados": "30"
+		}, {
+			"ano": "2009",
+			"vendidos": "50",
+			"estragados": "35"
+		}, {
+			"ano": "2010",
+			"vendidos": "45",
+			"estragados": "38"
+		}]
+	}, {
+		"idProduto": 3,
+		"vendas": [{
+			"ano": "2008",
+			"vendidos": "20",
+			"estragados": "30"
+		}, {
+			"ano": "2009",
+			"vendidos": "50",
+			"estragados": "35"
+		}, {
+			"ano": "2010",
+			"vendidos": "45",
+			"estragados": "38"
+		}]
+	}, {
+		"idProduto": 4,
+		"vendas": [{
+			"ano": "2008",
+			"vendidos": "20",
+			"estragados": "30"
+		}, {
+			"ano": "2009",
+			"vendidos": "50",
+			"estragados": "35"
+		}, {
+			"ano": "2010",
+			"vendidos": "45",
+			"estragados": "38"
+		}]
+	}, {
+		"idProduto": 5,
+		"vendas": [{
+			"ano": "2008",
+			"vendidos": "20",
+			"estragados": "30"
+		}, {
+			"ano": "2009",
+			"vendidos": "50",
+			"estragados": "35"
+		}, {
+			"ano": "2010",
+			"vendidos": "45",
+			"estragados": "38"
+		}]
+	}
+	, {
+		"idProduto": 6,
+		"vendas": [{
+			"ano": "2008",
+			"vendidos": "20",
+			"estragados": "30"
+		}, {
+			"ano": "2009",
+			"vendidos": "50",
+			"estragados": "35"
+		}, {
+			"ano": "2010",
+			"vendidos": "45",
+			"estragados": "38"
+		}]
+	}
+]

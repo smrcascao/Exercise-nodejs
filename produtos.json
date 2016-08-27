@@ -1,0 +1,32 @@
+[{
+	"id": 1,
+	"nome": "fibras",
+	"tipo": "cabos",
+	"pais": "China"
+}, {
+	"id": 2,
+	"nome": "cobre",
+	"tipo": "fios",
+	"pais": "Japao"
+}, {
+	"id": 3,
+	"nome": "telefone",
+	"tipo": "telecomunicações",
+	"pais": "Espanha"
+},{
+	"id": 4,
+	"nome": "campainha",
+	"tipo": "alarme",
+	"pais": "França"
+}
+,{
+	"id": 5,
+	"nome": "secretaria",
+	"tipo": "mobilia",
+	"pais": "Inglaterra"
+},{
+	"id": 6,
+	"nome": "lampada",
+	"tipo": "Iluminação",
+	"pais": "Alemanha"
+}]

@@ -18,11 +18,27 @@
     <!-- Custom styles for this template -->
     <link href="./docs/examples/starter-template/starter-template.css" rel="stylesheet">
       <link href="./docs/examples/starter-template/starter-template.css" rel="stylesheet">
-        <link href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"  rel="stylesheet"></link>
+      <!--  <link href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet"> -->
+      <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"  rel="stylesheet"></link>
+      <style>
+      .global_filter,
+      .column_filter{
+          display: block;
+          width: 100%;
+          padding: 0.5rem 0.75rem;
+          font-size: 1rem;
+          line-height: 1.25;
+          color: #55595c;
+          background-color: #fff;
+          background-image: none;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          border-radius: 0.25rem;
+              margin-top: 5%;
+      }
 
-
-
+      </style>
   </head>
 
   <body>
@@ -33,68 +49,67 @@
         <li class="nav-item active">
           <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
         </li>
-      
+        <ul class="nav navbar-nav navbar-right collapse navbar-toggleable-xs" >
+                 <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <span class="glyphicon glyphicon-user"></span>
+                               <strong class="username"  ></strong>
+                               <span class="glyphicon glyphicon-chevron-down" ></span>
+                           </a>
+                           <ul class="dropdown-menu" style="padding:17px;" >
+                               <li>
+                                   <div class="navbar-login" >
+                                       <div class="row" >
+                                           <div class="col-lg-4" >
+                                               <p class="text-center">
+                                               <span class="glyphicons glyphicons-bullets"></span>
+                                                   <span class="glyphicon glyphicon-user icon-size"></span>
+                                               </p>
+                                           </div>
+                                           <div class="col-lg-8">
+
+                                               <p class="text-left" >User: <strong class="username">User</strong></p>
+                                               <p class="text-left small">Mail: <strong id="mail">mail</strong> </p>
+                                               <p class="text-left small">telefone: <strong  id="telefone">mail</strong> </p>
+                                               <p class="text-left">
+
+                                               </p>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </li>
+                               <li class="divider navbar-login-session-bg"></li>
+                               <li class="navbar-login-session-bg">
+                                   <div class="navbar-login navbar-login-session">
+                                       <div class="row">
+                                           <div class="col-lg-12">
+                                               <p>
+                                                   <a class="btn btn-danger btn-block" onclick="logOut()">Logout</a>
+                                               </p>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </li>
+                           </ul>
+                       </li>
+               </ul>
       </ul>
 
 
- <ul class="nav navbar-nav navbar-right collapse navbar-toggleable-xs" >
-          <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <span class="glyphicon glyphicon-user"></span>
-                        <strong class="username">Authenticated User</strong>
-                        <span class="glyphicon glyphicon-chevron-down"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <div class="navbar-login">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <p class="text-center">
-                                        <span class="glyphicons glyphicons-bullets"></span>
-                                            <span class="glyphicon glyphicon-user icon-size"></span>
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-8">
 
-                                        <p class="text-left" >User: <strong class="username">User</strong></p>
-                                        <p class="text-left small">Mail: <strong id="mail">mail</strong> </p>
-                                        <p class="text-left small">telefone: <strong  id="telefone">mail</strong> </p>
-                                        <p class="text-left">
-                                           
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="divider navbar-login-session-bg"></li>
-                        <li class="navbar-login-session-bg">
-                            <div class="navbar-login navbar-login-session">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <p>
-                                            <a class="btn btn-danger btn-block" onclick="logOut()">Logout</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-        </ul>
 
     </nav>
 
     <div class="container" id="body" >
-   
-
-  
   <div class="row">
-    <div id="filtro" class="col-sm-2" style="background-color:gray;">
-                <input type="text" class="global_filter" id="global_filter">
-                <input type="text" class="column_filter" id="col0_filter" data-column="0" placeholder="Id">
-                <input type="text" class="column_filter" id="col1_filter" data-column="1" placeholder="Nome">
-                <input type="text" class="column_filter" id="col2_filter" data-column="2" placeholder="Tipo">
-                <input type="text" class="column_filter" id="col3_filter" data-column="3" placeholder="País">
+    <div id="filtro" class="col-sm-2" style="background-color:#80808000; padding-top: 2.5%" >
+
+
+  <input type="text" class="global_filter" id="global_filter"placeholder="Global" >
+  <input type="text" class="column_filter" id="col0_filter" data-column="0" placeholder="Id">
+  <input type="text" class="column_filter" id="col1_filter" data-column="1" placeholder="Nome">
+  <input type="text" class="column_filter" id="col2_filter" data-column="2" placeholder="Tipo">
+  <input type="text" class="column_filter" id="col3_filter" data-column="3" placeholder="País">
 
     </div>
     <div class="col-sm-10" style="background-color:white;">
@@ -118,10 +133,6 @@
     </table>
     </div>
   </div>
-
-
-     
-
     </div><!-- /.container -->
 
 
@@ -132,13 +143,11 @@
     <script>window.jQuery || document.write('<script src="./docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="./dist/js/bootstrap.min.js"></script>
-
       <script src="./home.js"></script>
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./docs/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+  <!--   <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script> -->
 <script>
     $(document).ready(function() {
     $('#produtos').DataTable();
@@ -146,4 +155,3 @@
 </script>
   </body>
 </html>
-

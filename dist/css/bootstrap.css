@@ -37,6 +37,23 @@ video {
   display: inline-block;
 }
 
+.global_filter
+.column_filter{
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+
+}
+
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -6402,7 +6419,7 @@ a.text-danger:focus, a.text-danger:hover {
     padding-top: 0px;
 
 }
-.navbar-footer 
+.navbar-footer
 {
     background-color:#DDD;
 }

@@ -29,4 +29,49 @@
 	"nome": "lampada",
 	"tipo": "Iluminação",
 	"pais": "Alemanha"
+},{
+	"id": 7,
+	"nome": "lanterna",
+	"tipo": "Iluminação",
+	"pais": "Inglaterra"
+},{
+	"id": 8,
+	"nome": "candeeiro",
+	"tipo": "Iluminação",
+	"pais": "Italia"
+},{
+	"id": 9,
+	"nome": "led",
+	"tipo": "Iluminação",
+	"pais": "Alemanha"
+},{
+	"id": 10,
+	"nome": "teclado",
+	"tipo": "informatica",
+	"pais": "China"
+},{
+	"id": 11,
+	"nome": "rato",
+	"tipo": "informatica",
+	"pais": "Alemanha"
+},{
+	"id": 12,
+	"nome": "monitor",
+	"tipo": "informatica",
+	"pais": "China"
+},{
+	"id": 13,
+	"nome": "colunas",
+	"tipo": "Audio",
+	"pais": "Itália"
+},{
+	"id": 14,
+	"nome": "OnePlus",
+	"tipo": "telecomunicações",
+	"pais": "China"
+},{
+	"id": 15,
+	"nome": "Xiaomi",
+	"tipo": "telecomunicações",
+	"pais": "China"
 }]
